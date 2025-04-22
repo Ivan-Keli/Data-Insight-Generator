@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 240, 242, 245;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Custom styling for code blocks in markdown */
+.prose pre {
+  @apply bg-gray-800 text-white text-sm rounded-md overflow-x-auto;
+}
+
+.prose code {
+  @apply text-blue-600 bg-blue-50 px-1 py-0.5 rounded;
+}
+
+.prose pre code {
+  @apply text-inherit bg-transparent p-0;
+}
+
+/* Custom styling for markdown tables */
+.prose table {
+  @apply w-full text-sm overflow-hidden;
+}
+
+.prose table th {
+  @apply bg-gray-100 text-left p-2 font-medium;
+}
+
+.prose table td {
+  @apply border-t border-gray-200 p-2;
+}
+
+.prose table tr:nth-child(even) {
+  @apply bg-gray-50;
+}
