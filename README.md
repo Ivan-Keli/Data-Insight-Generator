@@ -71,8 +71,14 @@ data-insight-generator/
 │   │   │   └── globals.css       # Global styles
 │   │   ├── components/
 │   │   │   ├── ui/               # UI components
-│   │   │   │   ├── Button.tsx
-│   │   │   │   ├── TextArea.tsx
+│   │   │   │   ├── Button.tsx        # Enhanced button component
+│   │   │   │   ├── Card.tsx          # Card component system
+│   │   │   │   ├── EmptyState.tsx    # Empty state component
+│   │   │   │   ├── FileUploadPreview.tsx # File preview component
+│   │   │   │   ├── LoadingSpinner.tsx # Loading indicator component
+│   │   │   │   ├── Select.tsx        # Enhanced select dropdown
+│   │   │   │   ├── StatusBadge.tsx   # Status indicator component
+│   │   │   │   ├── TextArea.tsx      # Enhanced textarea component
 │   │   │   │   └── ...
 │   │   │   ├── layout/           # Layout components
 │   │   │   │   ├── Header.tsx
@@ -225,6 +231,23 @@ The frontend will be available at http://localhost:3000
 | NEXT_PUBLIC_ENABLE_DUAL_LLM_COMPARISON | Enable dual LLM comparison | true |
 | NEXT_PUBLIC_DEFAULT_LLM | Default LLM service | gemini |
 | NEXT_PUBLIC_MAX_FILE_SIZE_MB | Maximum file size in MB | 10 |
+
+## UI Component System
+
+The frontend utilizes a comprehensive UI component system for consistent design and user experience:
+
+### Core Components
+
+- **Card**: Container component with header and body sections
+- **Button**: Enhanced button with variants, sizes, and loading states
+- **Select**: Dropdown component with icon support
+- **TextArea**: Text input area with validation support
+- **LoadingSpinner**: Customizable loading animation
+- **StatusBadge**: Status indicator for API health, etc.
+- **EmptyState**: Empty state placeholder with actions
+- **FileUploadPreview**: File upload preview with progress
+
+These components use a consistent design language with standardized colors, typography, spacing, and interactive states.
 
 ## LLM Prompt Documentation
 
